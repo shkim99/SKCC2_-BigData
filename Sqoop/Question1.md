@@ -13,10 +13,6 @@ Ansert #1.1
 1.1 테이블 정보 조회
 -------------
 <pre>
-sqoop eval \
---connect jdbc:mysql://localhost/loudacre \
---username training --password training \
---query "desc accounts
 
 [training@localhost ~]$ sqoop eval \
 > --connect jdbc:mysql://localhost/loudacre \
@@ -47,14 +43,7 @@ sqoop eval \
 1.2 저장
 -------------
 <pre>
-sqoop import \
---table accounts \
---connect jdbc:mysql://localhost/loudacre \
---username training --password training \
---columns "acct_num, first_name, last_name" \
---target-dir /loudacre/accounts/user_info \
---as-textfile \
---fields-terminated-by "\t"
+
 
 [training@localhost ~]$ sqoop import \
 > --table accounts \
