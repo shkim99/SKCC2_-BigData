@@ -13,3 +13,14 @@ this exercise.
 
 Ansert #1.1
 =============
+1.1 테이블 정보 조회
+-------------
+sqoop eval \
+--connect jdbc:mysql://localhost/loudacre \
+--username training --password training \
+--query "desc accounts
+
+
+
+1.2 저장
+-------------
