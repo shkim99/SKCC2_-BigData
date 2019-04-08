@@ -108,4 +108,4 @@ Note: Recompile with -Xlint:deprecation for details.
 
 2.2 Hue Screen shot
 -------------
-<img src = "https://github.com/shkim99/SKCC2_-BigData/blob/master/Sqoop/Question2.png">
+<img src = "https://github.com/shkim99/SKCC2_-BigData/blob/master/Sqoop/question2.PNG?raw=true">
