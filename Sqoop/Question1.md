@@ -6,15 +6,13 @@ HDFS directory /loudacre/accounts/user_info. Please save the file in text format
 delimiters.
 Hint: You will have to figure out what the name of the table columns are in order to complete
 this exercise.
-/>
-
-
 
 
 Ansert #1.1
 =============
 1.1 테이블 정보 조회
 -------------
+<pre>
 sqoop eval \
 --connect jdbc:mysql://localhost/loudacre \
 --username training --password training \
@@ -44,9 +42,11 @@ sqoop eval \
 | modified             | datetime             | NO  |     | (null)               |                      |
 
 [training@localhost ~]$
+</pre>
 
 1.2 저장
 -------------
+<pre>
 sqoop import \
 --table accounts \
 --connect jdbc:mysql://localhost/loudacre \
@@ -136,3 +136,4 @@ Note: Recompile with -Xlint:deprecation for details.
 		Bytes Written=2615920
 19/04/07 23:47:40 INFO mapreduce.ImportJobBase: Transferred 2.4947 MB in 34.0225 seconds (75.0859 KB/sec)
 19/04/07 23:47:40 INFO mapreduce.ImportJobBase: Retrieved 129761 records.
+<pre>
