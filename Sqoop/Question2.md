@@ -12,16 +12,8 @@ created.
 Ansert #2.1
 =============
 2.1 save the same in parquet format with snappy compression
-sqoop import \
---table accounts \
---connect jdbc:mysql://localhost/loudacre \
---username training --password training \
---columns "acct_num, first_name, last_name" \
---target-dir /loudacre/accounts/user_compressed \
---as-parquetfile \
---fields-terminated-by "\t" \
---compression-codec org.apache.hadoop.io.compress.SnappyCodec
-
+--------------
+<pre>
 
 [training@localhost ~]$ sqoop import \
 > --table accounts \
@@ -104,7 +96,7 @@ Note: Recompile with -Xlint:deprecation for details.
 19/04/07 23:47:40 INFO mapreduce.ImportJobBase: Transferred 2.4947 MB in 34.0225 seconds (75.0859 KB/sec)
 19/04/07 23:47:40 INFO mapreduce.ImportJobBase: Retrieved 129761 records.
 
-
+</pre>
 
 2.2 Hue Screen shot
 -------------
