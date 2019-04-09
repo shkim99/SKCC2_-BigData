@@ -1,9 +1,11 @@
 Question
 =============
->
+
 2. Start the Flume agent on the gateway node using the configuration you just reviewed
+
 Ansert #2
 =============
+<pre>
 [training@localhost flafka]$ flume-ng agent --conf /etc/flume-ng/conf \
 > --conf-file $DEVSH/exercises/flafka/spooldir_kafka.conf \
 > --name agent1 -Dflume.root.logger=INFO,console
