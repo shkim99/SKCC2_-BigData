@@ -1,11 +1,11 @@
 Question
 =============
->
+
 1. Create a new flume configuration file with the following:
 
 Ansert #1
 =============
-
+<pre>
 # spooldir.conf: A Spooling Directory Source
 
 # Name the components on this agent
@@ -31,10 +31,11 @@ agent1.sinks.hdfs-sink.hdfs.fileType = DataStream
 agent1.channels.memory-channel.type = memory
 agent1.channels.memory-channel.capacity = 1000
 agent1.channels.memory-channel.transactionCapacity = 100
-
+</pre>
 
 2. Start the agent.
 -------------
+<pre>
 [training@localhost flume]$ flume-ng agent --conf /etc/flume-ng/conf --conf-file $DEVSH/exercises/flume/spooldir_ex.conf --name agent1 -Dflume.root.logger=INFO,console
 Info: Sourcing environment configuration script /etc/flume-ng/conf/flume-env.sh
 Info: Including Hadoop libraries found via (/usr/bin/hadoop) for HDFS access
@@ -154,9 +155,5 @@ Info: Including Hive libraries found via () for Hive access
 2019-04-08 19:21:08,032 (conf-file-poller-0) [INFO - org.apache.flume.node.Application.startAllComponents(Application.java:184)] Starting Source webserver-log-source
 2019-04-08 19:21:08,035 (lifecycleSupervisor-1-8) [INFO - org.apache.flume.source.NetcatSource.start(NetcatSource.java:155)] Source starting
 2019-04-08 19:21:08,035 (lifecycleSupervisor-1-8) [INFO - org.apache.flume.source.NetcatSource.start(NetcatSource.java:169)] Created serverSocket:sun.nio.ch.ServerSocketChannelImpl[/127.0.0.1:44444]
-
-
-
-
 
 <pre>
